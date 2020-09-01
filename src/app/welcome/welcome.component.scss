@@ -1,16 +1,25 @@
+// body {
+//   display: grid;
+//   grid-template-columns: 1fr, 1fr;
+//   grid-template-rows: 1fr, 1fr;
+
+// }
+
 mat-card {
-  width: 65%;
+  width: 75%;
   margin: auto;
   text-align: center;
+  margin-bottom: 3%;
 }
 
-a {
-  text-decoration: none;
-  color: #424242;
+.quiz-card {
+  max-width: 200px;
+  box-shadow: 5px 5px 5px #777777;
 }
 
 button:hover{
-  background-color: white;
+  background-color: rgba(241, 182, 243, 0.74);
+  text-decoration-color: white;
   opacity: 50% ;
 }
 

@@ -3,12 +3,14 @@
 <mat-card *ngIf="questions">
 
   <div class="questions" *ngIf="!showResults">
-    <app-question-form [question]="questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
+    <app-question-form [question]="questions[currentQuestionIndex]" 
+    (onChoiceMade)="updateChoice($event)">
     </app-question-form>
 
     <mat-card-actions>
       <button class="btn btn-success" (click)="nextOrViewResults()"
-        [disabled]="!answers.values[currentQuestionIndex]">{{currentQuestionIndex === questions.length - 1 ? 'View results' : 'Next'}}
+        [disabled]="!answers.values[currentQuestionIndex]">
+        {{currentQuestionIndex === questions.length - 1 ? 'View results' : 'Next'}}
       </button>
     </mat-card-actions>
   </div>

@@ -12,8 +12,8 @@ import { unescapeIdentifier } from '@angular/compiler';
 })
 export class QuestionsComponent implements OnInit {
 
-  answers: Answers;
   quiz: Quiz;
+  answers: Answers; 
   questions: Question[];
   currentQuestionIndex: number;
   showResults = false;

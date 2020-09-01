@@ -3,13 +3,13 @@
     <mat-card-title class="title"> Quizzes</mat-card-title>
   </mat-card>
   <br><br>
-  <div *ngFor="let q of quiz">
-    <mat-card>
+  <div class="body" *ngFor="let q of quiz">
+    <mat-card class="quiz-card">
       <mat-card-title>{{q.label}}</mat-card-title>
       <mat-card-subtitle>{{q.description}}</mat-card-subtitle>
       <mat-card-actions>
-        <button mat-raised-button color="secondary" class="btn btn-primary">
-          <a routerLink="/{{q.name}}" class="btn btn-primary">Choose quiz</a>
+        <button mat-raised-button color="primary" routerLink="/{{q.name}}" class="btn btn-primary">
+          Take this quiz!
         </button>
       </mat-card-actions>
     </mat-card>
